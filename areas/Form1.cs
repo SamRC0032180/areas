@@ -21,5 +21,13 @@ namespace areas
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double length = double.Parse(textBox1.Text);
+            double width = double.Parse(textBox2.Text);
+            double area = length * width;
+            textBox3.AppendText(area.ToString());
+        }
     }
 }
